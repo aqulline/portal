@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            font-size: 5em;
+            animation: changeColor 5s infinite alternate;
+        }
+
+        @keyframes changeColor {
+            0% {
+                background: linear-gradient(to right, #ff7e5f, #feb47b);
+            }
+            100% {
+                background: linear-gradient(to right, #47cf73, #4cb5ff);
+            }
+        }
+        .wiggly-text {
+            font-size: 3em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation: wiggly 0.5s ease-in-out infinite;
+        }
+
+        @keyframes wiggly {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            25%, 75% {
+                transform: translateX(-5px);
+            }
+            50% {
+                transform: translateX(5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wiggly-text">PORTAL</div>
+</body>
+</html>
